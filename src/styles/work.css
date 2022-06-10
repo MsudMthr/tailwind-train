@@ -1,0 +1,10 @@
+.women-work {
+  @apply h-36 w-80 rounded-lg sm:h-[211px] sm:w-[532px] lg:h-[741px] lg:w-full ;
+}
+
+@media (min-width: 1024px) {
+  .path {
+    -webkit-clip-path: polygon(22% 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(22% 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
