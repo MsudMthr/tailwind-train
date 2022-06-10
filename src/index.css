@@ -4,4 +4,40 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('./styles/work.css');
+@import url("./styles/work.css");
+@import url("./styles/signUp.css");
+
+@layer components {
+  .center {
+    @apply flex items-center justify-center;
+  }
+  .input-Parent-form {
+    @apply flex w-full flex-col gap-1.5;
+  }
+  .label-form {
+    @apply text-sm text-[#4a5568] font-semibold;
+  }
+
+  .input-form {
+    @apply h-10 w-full rounded-lg border border-[#e2e8f0] bg-[#f7fafc] outline-none;
+  }
+  .label-gender-input {
+    @apply flex w-48 h-12 items-center border border-[#e2e8f0] bg-[#f7fafc] rounded-lg ;
+  }
+  .gender-input {
+    @apply hidden ;
+  }
+  .birthday-btn {
+    @apply w-[120px] h-12 flex items-center justify-center border border-[#e2e8f0] bg-[#f7fafc] text-[#4a5568] rounded-lg;
+  }
+}
+
+.transition {
+    transition: .5s all;
+}
+
+/* .span-label-input-gender {
+    @apply mr-3 ml-4 h-5 w-5 rounded-full border bg-white;
+} */
+
+

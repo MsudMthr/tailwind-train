@@ -5,8 +5,8 @@ import workWomen from "../assets/images/workWomen.png";
 
 const Work = () => {
   return (
-    <section className="h-screen px-11 pt-[51px] pb-[83px] md:px-24 lg:relative lg:pr-0 lg:pl-12">
-      <div className=" flex  h-full flex-col items-center justify-center lg:flex-row-reverse ">
+    <section className="container mx-auto h-screen px-11 pt-[51px] pb-[83px] md:px-24 lg:relative lg:pr-0 lg:pl-12 lg:pt-0">
+      <div className=" flex  h-screen flex-col items-center justify-center lg:flex-row-reverse ">
         <img
           src={logo}
           alt="logo"
@@ -16,7 +16,7 @@ const Work = () => {
           {" "}
           <img src={workWomen} alt="work in anywhere" className="women-work" />
         </div>
-        <div className="w-">
+        <div className="h-60">
           <h1 className="mt-9 text-3xl font-semibold sm:text-4xl sm:leading-[43.2px] xl:text-5xl">
             You can work from anywhere.
             <span className="text-indigo-500  "> Take advantage of it</span>.
