@@ -7,6 +7,10 @@
 @import url("./styles/work.css");
 @import url("./styles/signUp.css");
 
+body {
+  background: #e5e5e5;
+}
+
 @layer components {
   .center {
     @apply flex items-center justify-center;
@@ -15,29 +19,50 @@
     @apply flex w-full flex-col gap-1.5;
   }
   .label-form {
-    @apply text-sm text-[#4a5568] font-semibold;
+    @apply text-sm font-semibold text-[#4a5568];
   }
 
   .input-form {
     @apply h-10 w-full rounded-lg border border-[#e2e8f0] bg-[#f7fafc] outline-none;
   }
   .label-gender-input {
-    @apply flex w-48 h-12 items-center border border-[#e2e8f0] bg-[#f7fafc] rounded-lg ;
+    @apply flex h-12 w-48 items-center rounded-lg border border-[#e2e8f0] bg-[#f7fafc];
   }
   .gender-input {
-    @apply hidden ;
+    @apply hidden;
   }
   .birthday-btn {
-    @apply w-[120px] h-12 flex items-center justify-center border border-[#e2e8f0] bg-[#f7fafc] text-[#4a5568] rounded-lg;
+    @apply flex h-12 w-[120px] items-center justify-center rounded-lg border border-[#e2e8f0] bg-[#f7fafc] text-[#4a5568];
+  }
+
+  /* home styles */
+  .detail-home-card {
+    @apply mr-2 text-xs  font-medium;
+  }
+
+  .star-home-card {
+    @apply mr-1 w-[11px];
+  }
+
+  .menu-burger-line {
+    @apply h-0.5 w-full origin-[1px] bg-[#a0aec0];
+  }
+
+  .menu-link {
+    @apply mb-2 text-lg;
   }
 }
 
 .transition {
-    transition: .5s all;
+  transition: 0.5s all;
 }
 
 /* .span-label-input-gender {
     @apply mr-3 ml-4 h-5 w-5 rounded-full border bg-white;
 } */
 
+.search-input:focus + .label-search-input,
+.search-input:active + .label-search-input {
+  opacity: 0;
+}
 
