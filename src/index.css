@@ -49,7 +49,24 @@ body {
   }
 
   .menu-link {
-    @apply mb-2 text-lg;
+    @apply mb-2 sm:mb-0 text-lg;
+  }
+
+  /* filter styles */
+  .head-title-filter {
+    @apply mb-[6px] text-sm font-medium text-[#a0aec0];
+  }
+
+  .btn-filter {
+    @apply flex h-10 w-[150px] items-center justify-between rounded-lg bg-[#4a5568] px-3 py-3 text-white shadow-sm;
+  }
+
+  .text-filter-option {
+    @apply text-white;
+  }
+
+  .checkbox-filter {
+    @apply h-6 w-6 rounded-md border-none text-[#667EEA] outline-none ring-0 bg-[#1A202C];
   }
 }
 
@@ -65,4 +82,3 @@ body {
 .search-input:active + .label-search-input {
   opacity: 0;
 }
-
